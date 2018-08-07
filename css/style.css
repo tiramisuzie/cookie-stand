@@ -1,0 +1,9 @@
+ul, li, h1 {
+  margin: initial;
+  padding: initial;
+  border: initial;
+  font-size: initial;
+  font: inherit; 
+  vertical-align: initial;
+
+}
