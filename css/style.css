@@ -1,9 +1,12 @@
-ul, li, h1 {
-  margin: initial;
-  padding: initial;
-  border: initial;
-  font-size: initial;
-  font: inherit; 
-  vertical-align: initial;
+body {
+background: salmon;
+}
+
+table, th, td {
+  
+  padding: 30px;
+  border: 1px solid black ;
+  
+
 
 }
