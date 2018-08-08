@@ -1,9 +1,20 @@
-ul, li, h1 {
-  margin: initial;
-  padding: initial;
-  border: initial;
-  font-size: initial;
-  font: inherit; 
-  vertical-align: initial;
+body {
+background: salmon;
+}
+
+table,{
+
+    max-width: 100%;
+    word-break: normal;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+th, td {
+  
+  padding: 9px;
+  border: 1px solid black ;
+  
+
 
 }
