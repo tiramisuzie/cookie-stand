@@ -2,9 +2,17 @@ body {
 background: salmon;
 }
 
-table, th, td {
+table,{
+
+    max-width: 100%;
+    word-break: normal;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+
+th, td {
   
-  padding: 30px;
+  padding: 9px;
   border: 1px solid black ;
   
 
