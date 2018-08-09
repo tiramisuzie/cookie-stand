@@ -11,22 +11,25 @@
 </head>
 <body>
   <h1>Cookies Needed By Location Each Day</h1>
-  <table id= "tableOfCookies">
-  <tfoot>
-      <tr id="totalfooter">
-          <th>Total</th>
-      </tr>
-    </tfoot>
+  <table id="tableOfCookies">
+    <tfoot id="totalfooter"></tfoot>
   </table>
-  <form>
+  <form id="storeForm">
       <fieldset>
     <div>
-      <label for="name"> Enter your store location: </label> <input id="name" name="name" type="text"/>
+      <label for="locationName"> Enter your store location: </label> <input id="locationName" name="locationName" type="text"/>
     </div>
     <div>
-      <label for="cookies"> Enter the amount of cookies per hour:</label> <input id="cookies" name="cookies" type="number"/>
+      <label for="minCust"> Enter minimum customers: </label> <input id="minCust" name="minCust" type="number"/>
+    </div>
+    <div>
+      <label for="maxCust"> Enter Maximum Customers: </label> <input id="maxCust" name="maxCust" type="number"/>
+    </div>
+    <div>
+      <label for="avgCookies"> Enter Average Cookie Sales: </label> <input id="avgCookies" name="avgCookies" type="number"/>
     </div>
     </fieldset>
+    <input type="submit" value="addstore" />
   </form>
 
     <script src="js/app.js"></script>
