@@ -1,6 +1,8 @@
 body {
 background: salmon;
 }
+h1 {text-align: center;
+}
 
 table,{
 
@@ -10,11 +12,17 @@ table,{
     table-layout: fixed;
 }
 
-th, td {
-  
-  padding: 9px;
-  border: 1px solid black ;
-  
 
-
-}
+  td, th {
+    border: 1px solid black;
+    padding: 6px;
+  }
+  
+  tr:hover {
+    background-color: #bbb;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
