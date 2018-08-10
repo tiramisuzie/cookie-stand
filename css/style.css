@@ -1,14 +1,17 @@
 body {
 background: #BA7E4F;
+width: 85%;
+max-width: 2000px;
+    margin: auto;
 }
 .salmonHeader {
   font-family: 'La Belle Aurore', cursive;
   text-align: center;
-  border-width: 2px;
-  border-style: double;
+  border-bottom: 14px double black;
   margin-top: 50px;
-  font-size: 5em;
-  width: 1400px;
+  font-size: 6em;
+  width: 85%;
+  font-weight: 200;
 
 }
 
@@ -18,12 +21,16 @@ table,{
     word-break: normal;
     word-wrap: break-word;
     table-layout: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
   td, th {
-    border: 1px solid black;
+    border: 8px solid black;
+    border-style: double;
+    
     padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   tr:hover {
@@ -35,8 +42,61 @@ table,{
   }
   
 
-  .container {
+  .row {
+    width: 85%;
     display: flex;
-    flex-wrap: wrap;
-    width: 1400px;
+    margin: 16px;
   }
+
+  .column {
+    display: grid;
+    margin: 16px;
+  }
+
+  .description {
+    border: 8px solid #BA7E4F;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .frame {
+    width: 100%;
+    background: white;
+  }
+
+  .description2 {
+    border: 8px solid #BA7E4F;
+    height: 81%;
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .footer {
+    color: white;
+    font-size: 40px;
+    padding: 80px 0;
+    background-color: grey;
+  }
+  
+
+.container {
+  margin-top: 40px;
+}
+
+.textHeader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 200;
+  color: #A57469;
+}
+
+.bodyInfo {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
