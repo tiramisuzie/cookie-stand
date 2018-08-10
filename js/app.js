@@ -4,7 +4,7 @@ console.log('js loaded');
 
 
 var stores = [];
-var storeHours = ['Location', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'Total'];
+var storeHours = ['Location', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'Total'];
 
 function Stores(location, minCust, maxCust, avgCookies) {
   this.location = location;
@@ -59,7 +59,7 @@ function simulatedCookies(avgCookies, minCust, maxCust) {
 
 //generates random number of customers
 function getRandomCustomer(minCust, maxCust) {
-  return Math.floor(Math.random() * (maxCust - minCust) + minCust);
+  return Math.floor(Math.random() * (maxCust - minCust+1) + minCust);
 }
 
 
