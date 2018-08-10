@@ -4,7 +4,7 @@ console.log('js loaded');
 
 
 var stores = [];
-var storeHours = ['Location', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', 'Total'];
+var storeHours = ['Location', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'Total'];
 
 function Stores(location, minCust, maxCust, avgCookies) {
   this.location = location;
@@ -13,6 +13,7 @@ function Stores(location, minCust, maxCust, avgCookies) {
   this.avgCookies = avgCookies;
   stores.push(this);
 }
+
 Stores.prototype.addStoreInfo = function (){
   var trContainer = document.createElement('tr');
   var thLocation = document.createElement('th');
@@ -28,11 +29,11 @@ Stores.prototype.addStoreInfo = function (){
   table.appendChild(trContainer);
 };
 
-var pike = new Stores('1st and Pike', 23, 65, 6.3);
-var seaTac = new Stores('SeaTac Airport', 3, 24, 1.2);
-var seattleCenter = new Stores('Seattle Center', 11, 38, 3.7);
-var capitolHill = new Stores('Capitol Hill', 20, 38, 2.3);
-var alki = new Stores('Alki', 2, 16, 4.6);
+new Stores('1st and Pike', 23, 65, 6.3);
+new Stores('SeaTac Airport', 3, 24, 1.2);
+new Stores('Seattle Center', 11, 38, 3.7);
+new Stores('Capitol Hill', 20, 38, 2.3);
+new Stores('Alki', 2, 16, 4.6);
 
 //loops through each store to get cookie location per store
 function calculateSales(store) {
@@ -58,7 +59,7 @@ function simulatedCookies(avgCookies, minCust, maxCust) {
 
 //generates random number of customers
 function getRandomCustomer(minCust, maxCust) {
-  return Math.floor(Math.random() * (maxCust - minCust) + minCust);
+  return Math.floor(Math.random() * (maxCust - minCust+1) + minCust);
 }
 
 
